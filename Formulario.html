@@ -19,13 +19,39 @@
         <p> ¿Tienes preguntas o comentarios? Llena este formulario y me pondré en contacto contigo. </p>
         <form action="https://formsubmit.co/edgar.vilchis@politicas.unam.mx" method="POST">
             <fieldset>
-                Nombre: <input type="text" placeholder="EdVyld" required name="Nombre"> <br>
-                Correo electronico: <input type="email" placeholder="fulanito@gmail.com" name="e-mail"> <br>
-                Telefono: <input type="tel" name="" id="" placeholder="5555555555" name="Telefono"> <br>
-                Dudas, quejas o sugerencias: <br>
-                <textarea name="" id="" placeholder="Escribe tu duda, queja o segerencia aqui" rows="5" cols="40" required name="Dudas,quejas y sugerencias"></textarea> <br>
-                <input type="checkbox" name="Acepto" id=""> Acepto Terminos y Condiciones <br>
-                <input type="submit">
+                <label for="Nombre"> Nombre: </label>
+                <input type="text" name="Nombre" id="Nombre" placeholder="Escribe aqui tu nombre" required> 
+                <br>
+                <label for="Apellido"> Apellido: </label>
+                <input type="text" name="Apellido" id="Apellido" placeholder="Escribe aqui tu apelllido" required> 
+                <br>
+                <label for="email">Correo electronico:</label>
+                <input type="email" placeholder="Escribe aqui tu email" name="email" id="email"> 
+                <br>
+                <label for="Pais">Pais:</label>
+                <select name="Pais" id="Pais">
+                    <Option value="Argentina">Argentina</Option>
+                    <Option value="Chile">Chile</Option>
+                    <Option value="Bolivia">Bolivia</Option>
+                    <Option value="Peru">Peru</Option>
+                    <Option value="Uruguay">Uruguay</Option>
+                    <Option value="España">España</Option>
+                    <Option value="Ecuador">Ecuador</Option>
+                    <Option value="Mexico">Mexico</Option>
+                    <Option value="Venezuela">Venezuela</Option>
+                    <Option value="Otro">Otro</Option>
+                </select>
+                <br><br>
+                <textarea name="Comentario" id="Comnetario" placeholder="Escribe aqui tu duda, queja o segerencia" rows="5" cols="40" required name="Dudas,quejas y sugerencias"></textarea> 
+                <br>
+                <label for="Motivo">Motivos de contacto:</label> <br>
+                <input type="radio" name="Motivo" id="Motivo"> <i>Dudas</i>
+                <input type="radio" name="Motivo" id="Motivo"> <i>Quejas</i>
+                <input type="radio" name="Motivo" id="Motivo"> <i>Sugerencias</i>
+                <br> <br>
+                <input type="checkbox" name="Acepto" id=""> Acepto Terminos y Condiciones 
+                <br> <br>
+                <input type="submit" value="Enviar">
             </fieldset>
         </form>
     </main>
